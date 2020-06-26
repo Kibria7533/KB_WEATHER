@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+const APP_KEY='c972d10ce80b4bc2fa9929eb5a810cbf'
 
 class App extends Component {
   constructor() {
@@ -19,7 +19,7 @@ class App extends Component {
   }
   sub = async(e) => {
     e.preventDefault();
-    const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.name}&appid=c972d10ce80b4bc2fa9929eb5a810cbf`)
+    const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.name}&appid=${APP_KEY}`)
 
 
 
