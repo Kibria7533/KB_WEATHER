@@ -17,9 +17,9 @@ class App extends Component {
   save = e => {
     this.setState({ name: e.target.value });
   }
-  sub = e => {
+  sub = async(e) => {
     e.preventDefault();
-    const response = axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.name}&appid=c972d10ce80b4bc2fa9929eb5a810cbf/`)
+    const response =  axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.name}&appid=c972d10ce80b4bc2fa9929eb5a810cbf`)
 
 
 
