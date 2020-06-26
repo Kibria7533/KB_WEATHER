@@ -19,7 +19,7 @@ class App extends Component {
   }
   sub = e => {
     e.preventDefault();
-    const response = axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.name}&appid=c972d10ce80b4bc2fa9929eb5a810cbf`)
+    const response = axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.name}&appid=c972d10ce80b4bc2fa9929eb5a810cbf/`)
 
 
 
