@@ -19,7 +19,7 @@ class App extends Component {
   }
   sub = async(e) => {
     e.preventDefault();
-    const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.name}&appid=${APP_KEY}`)
+    const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.name}&appid=${APP_KEY}`)
 
 
 
